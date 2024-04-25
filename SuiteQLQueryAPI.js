@@ -154,11 +154,7 @@ define(function(require) {
                 details: e.message
             });
 
-            var errorResult = {
-                title: 'Error Caught',
-                details: e.message
-            };
-            return JSON.stringify(errorResult);
+            return JSON.stringify(e);
         }
         
     }
